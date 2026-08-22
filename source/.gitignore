@@ -1,0 +1,7 @@
+build/
+*.img
+assets/vmlinuz
+*.efi
+*.obj
+*.o
+release/
