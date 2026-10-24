@@ -17,7 +17,7 @@ CFLAGS := --target=x86_64-pc-windows-msvc \
           -Wall -Wextra -Werror -Wpedantic -Iinclude $(if $(DIRECT),-DXBOOT_DIRECT_LINUX,)
 LDFLAGS := /subsystem:efi_application /entry:efi_main /nodefaultlib /machine:x64
 
-.PHONY: all clean image run test test-linux-userspace test-direct-linux test-hash-negative test-tcg2 test-secureboot test-real-fat32 fuzz-smoke check
+.PHONY: all clean image run test test-linux-userspace test-direct-linux test-hash-negative test-tcg2 test-secureboot test-real-fat32 fuzz-smoke host-test check
 
 all: $(BUILD)/xboot.efi
 
