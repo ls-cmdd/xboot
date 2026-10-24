@@ -23,8 +23,8 @@ sha256sum -c MANIFEST.sha256
 ويجب أن تعرض الملفات الأساسية `OK`. يمكن إعادة البناء والاختبار من شجرة المصدر باستخدام:
 
 ```bash
-make clean
-./tools/quality_gate.sh
+make -C source clean
+./source/tools/quality_gate.sh
 ```
 
 ## الميزات المثبتة
